@@ -7,14 +7,13 @@
         "output": "dist"
     },
     "functions": {
-        "directory": "functions"
+        "directory": "functions",
         "runtime": "nodejs"
     },
-    
-        "cashes": [
-            { "source": "/images/*",
+    "caches": [
+        {
+            "source": "/images/*",
             "cacheTtl": 86400
-            }
-        ]
-    
+        }
+    ]
 }
