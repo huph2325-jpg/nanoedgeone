@@ -1,0 +1,6 @@
+Organization = db_nanodev
+Project name = nanodev
+Database password = #Praditha91
+
+Project URL= https://mzatepnnuzdejanybqta.supabase.co
+Publishable API Key = sb_publishable_Px4_ta9e5PPuaOnLuL6iqA_MIvV6MeT

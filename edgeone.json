@@ -1,0 +1,20 @@
+{
+    "name": "nanoedgeone",
+    "version": "1.0.0",
+    "description": "NanoEdge",
+    "build": {
+        "command": "npm install && npm run build",
+        "output": "dist"
+    },
+    "functions": {
+        "directory": "functions"
+        "runtime": "nodejs"
+    },
+    
+        "cashes": [
+            { "source": "/images/*",
+            "cacheTtl": 86400
+            }
+        ]
+    
+}
