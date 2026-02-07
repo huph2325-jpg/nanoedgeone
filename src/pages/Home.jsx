@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import Button from '../components/shared/Button'
 import InfluencerCard from '../components/shared/InfluencerCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,6 +7,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
 export default function HomePage() {
   const navigate = useNavigate()
+  const { t } = useTranslation()
 
   // Mock data
   const featuredInfluencers = [
@@ -51,10 +53,10 @@ export default function HomePage() {
       <section className="container-custom py-20 sm:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-vintage font-bold text-navy-blue mb-6 leading-tight">
-            Connect with Influencers, Grow Your Brand
+            {t('hero.title')}
           </h1>
           <p className="text-xl text-muted-taupe mb-8">
-            NanoEdge brings together SMEs and influencers for authentic collaborations that drive real results
+            {t('hero.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -62,14 +64,14 @@ export default function HomePage() {
               variant="primary"
               className="text-lg"
             >
-              Browse Influencers
+              {t('hero.browse')}
             </Button>
             <Button 
               onClick={() => navigate('/auth/signup')}
               variant="secondary"
               className="text-lg"
             >
-              Join as Influencer
+              {t('hero.join')}
             </Button>
           </div>
         </div>
@@ -77,13 +79,13 @@ export default function HomePage() {
 
       {/* How It Works */}
       <section className="container-custom py-16">
-        <h2 className="section-title text-center">How It Works</h2>
+        <h2 className="section-title text-center">{t('howItWorks.title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {[
-            { step: 1, title: 'Browse', desc: 'Explore our curated influencer marketplace' },
-            { step: 2, title: 'Connect', desc: 'Find the perfect match for your campaign' },
-            { step: 3, title: 'Collaborate', desc: 'Work together on authentic content' },
-            { step: 4, title: 'Measure', desc: 'Track results and ROI' },
+            { step: 1, title: t('howItWorks.step1'), desc: t('howItWorks.step1_desc') },
+            { step: 2, title: t('howItWorks.step2'), desc: t('howItWorks.step2_desc') },
+            { step: 3, title: t('howItWorks.step3'), desc: t('howItWorks.step3_desc') },
+            { step: 4, title: t('howItWorks.step4'), desc: t('howItWorks.step4_desc') },
           ].map((item) => (
             <div key={item.step} className="text-center">
               <div className="bg-vintage-gold text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
@@ -98,7 +100,7 @@ export default function HomePage() {
 
       {/* Featured Influencers */}
       <section className="container-custom py-16">
-        <h2 className="section-title text-center">Featured Influencers</h2>
+        <h2 className="section-title text-center">{t('featured.title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredInfluencers.map((influencer) => (
             <InfluencerCard 
@@ -113,7 +115,7 @@ export default function HomePage() {
             onClick={() => navigate('/influencers')}
             variant="outline"
           >
-            View All Influencers
+            {t('featured.viewAll')}
           </Button>
         </div>
       </section>
@@ -121,12 +123,12 @@ export default function HomePage() {
       {/* Why Choose Us */}
       <section className="bg-navy-blue text-cream-white py-16 my-16">
         <div className="container-custom">
-          <h2 className="section-title text-center text-cream-white">Why Choose NanoEdge?</h2>
+          <h2 className="section-title text-center text-cream-white">{t('whyChoose.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: 'Verified Influencers', desc: 'All influencers are vetted and authentic' },
-              { title: 'Transparent Pricing', desc: 'No hidden fees, fair rates for everyone' },
-              { title: 'Seamless Booking', desc: 'Easy-to-use platform for hassle-free collaboration' },
+              { title: t('whyChoose.verified'), desc: t('whyChoose.verified_desc') },
+              { title: t('whyChoose.transparent'), desc: t('whyChoose.transparent_desc') },
+              { title: t('whyChoose.seamless'), desc: t('whyChoose.seamless_desc') },
             ].map((item, idx) => (
               <div key={idx} className="flex gap-4">
                 <FontAwesomeIcon icon={faCheckCircle} className="text-vintage-gold text-2xl flex-shrink-0 mt-1" />
@@ -142,16 +144,16 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="container-custom py-20 text-center">
-        <h2 className="text-4xl font-vintage font-bold text-navy-blue mb-6">Ready to Start?</h2>
+        <h2 className="text-4xl font-vintage font-bold text-navy-blue mb-6">{t('cta.title')}</h2>
         <p className="text-lg text-muted-taupe mb-8 max-w-2xl mx-auto">
-          Join thousands of brands and influencers using NanoEdge to create authentic partnerships
+          {t('cta.subtitle')}
         </p>
         <Button 
           onClick={() => navigate('/auth/signup')}
           variant="primary"
           className="text-lg"
         >
-          Get Started Today
+          {t('cta.button')}
         </Button>
       </section>
     </div>

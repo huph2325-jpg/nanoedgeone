@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import InfluencerCard from '../components/shared/InfluencerCard'
 import Button from '../components/shared/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,6 +8,7 @@ import { faSearch, faSliders, faTimes, faFilter } from '@fortawesome/free-solid-
 
 export default function Influencers() {
   const navigate = useNavigate()
+  const { t } = useTranslation()
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedNiche, setSelectedNiche] = useState('')
   const [priceRange, setPriceRange] = useState([0, 2000])
@@ -93,10 +95,10 @@ export default function Influencers() {
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-vintage font-bold text-navy-blue mb-3">
-            Find Your Perfect Influencer
+            {t('influencers.title')}
           </h1>
           <p className="text-muted-taupe text-lg">
-            Browse and connect with {allInfluencers.length}+ verified influencers across different niches
+            {t('influencers.search')}
           </p>
         </div>
 
@@ -108,11 +110,11 @@ export default function Influencers() {
               <div>
                 <label className="block text-xs font-semibold text-navy-blue mb-2 uppercase tracking-wide">
                   <FontAwesomeIcon icon={faSearch} className="mr-2 text-vintage-gold" />
-                  Search
+                  {t('influencers.search')}
                 </label>
                 <input
                   type="text"
-                  placeholder="Name or niche..."
+                  placeholder={t('influencers.search')}
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full px-3 py-2.5 border border-light-beige rounded-lg focus:outline-none focus:border-vintage-gold focus:ring-1 focus:ring-vintage-gold transition-all"
@@ -122,7 +124,7 @@ export default function Influencers() {
               {/* Niche Filter */}
               <div>
                 <label className="block text-xs font-semibold text-navy-blue mb-2 uppercase tracking-wide">
-                  Niche Category
+                  {t('influencers.niche')}
                 </label>
                 <select
                   value={selectedNiche}
@@ -139,7 +141,7 @@ export default function Influencers() {
               {/* Price Range */}
               <div>
                 <label className="block text-xs font-semibold text-navy-blue mb-2 uppercase tracking-wide">
-                  Price Range (${priceRange[0]} - ${priceRange[1]})
+                  {t('influencers.price')} (${priceRange[0]} - ${priceRange[1]})
                 </label>
                 <input
                   type="range"
@@ -178,7 +180,7 @@ export default function Influencers() {
                 className="flex items-center gap-2 text-vintage-gold hover:text-vintage-gold/80 font-semibold transition-colors"
               >
                 <FontAwesomeIcon icon={faFilter} />
-                {showAdvancedFilters ? 'Hide' : 'Show'} Advanced Filters
+                {showAdvancedFilters ? t('common.cancel') : t('common.edit')} Advanced Filters
               </button>
               
               {hasActiveFilters && (
@@ -187,7 +189,7 @@ export default function Influencers() {
                   className="flex items-center gap-2 text-muted-taupe hover:text-navy-blue font-semibold transition-colors"
                 >
                   <FontAwesomeIcon icon={faTimes} />
-                  Reset All
+                  {t('influencers.clear')}
                 </button>
               )}
             </div>
@@ -276,7 +278,7 @@ export default function Influencers() {
               <FontAwesomeIcon icon={faSliders} className="text-5xl text-muted-taupe mb-4" />
             </div>
             <h2 className="text-2xl font-vintage font-bold text-navy-blue mb-2">
-              No influencers found
+              {t('influencers.noResults')}
             </h2>
             <p className="text-muted-taupe mb-6">
               Try adjusting your filters to find the perfect influencer for your campaign
@@ -287,13 +289,13 @@ export default function Influencers() {
                 onClick={handleResetFilters}
               >
                 <FontAwesomeIcon icon={faTimes} className="mr-2" />
-                Reset All Filters
+                {t('influencers.clear')}
               </Button>
               <Button 
                 variant="secondary"
                 onClick={() => navigate('/')}
               >
-                Back to Home
+                {t('common.back')}
               </Button>
             </div>
           </div>

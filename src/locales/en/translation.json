@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Home",
+    "influencers": "Influencers",
+    "about": "About",
+    "auth": "Sign In",
+    "signup": "Join Now"
+  },
+  "hero": {
+    "title": "Connect with Influencers, Grow Your Brand",
+    "subtitle": "NanoEdge brings together SMEs and influencers for authentic collaborations that drive real results",
+    "browse": "Browse Influencers",
+    "join": "Join as Influencer"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1": "Browse",
+    "step1_desc": "Explore our curated influencer marketplace",
+    "step2": "Connect",
+    "step2_desc": "Find the perfect match for your campaign",
+    "step3": "Collaborate",
+    "step3_desc": "Work together on authentic content",
+    "step4": "Measure",
+    "step4_desc": "Track results and ROI"
+  },
+  "featured": {
+    "title": "Featured Influencers",
+    "viewAll": "View All Influencers"
+  },
+  "whyChoose": {
+    "title": "Why Choose NanoEdge?",
+    "verified": "Verified Influencers",
+    "verified_desc": "All influencers are vetted and authentic",
+    "transparent": "Transparent Pricing",
+    "transparent_desc": "No hidden fees, fair rates for everyone",
+    "seamless": "Seamless Booking",
+    "seamless_desc": "Easy-to-use platform for hassle-free collaboration"
+  },
+  "cta": {
+    "title": "Ready to Start?",
+    "subtitle": "Join thousands of brands and influencers using NanoEdge to create authentic partnerships",
+    "button": "Get Started Today"
+  },
+  "influencers": {
+    "title": "Explore Influencers",
+    "search": "Search influencers...",
+    "filter": "Filter",
+    "niche": "Niche",
+    "followers": "Followers",
+    "engagement": "Engagement Rate",
+    "price": "Price",
+    "clear": "Clear Filters",
+    "book": "Book Now",
+    "noResults": "No influencers found"
+  },
+  "auth": {
+    "login": "Sign In",
+    "signup": "Create Account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "name": "Full Name",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "submit": "Submit"
+  },
+  "footer": {
+    "company": "Company",
+    "about": "About Us",
+    "blog": "Blog",
+    "careers": "Careers",
+    "resources": "Resources",
+    "help": "Help Center",
+    "community": "Community",
+    "legal": "Legal",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2026 NanoEdge. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "influencers": "Influencer",
+    "about": "Tentang Kami",
+    "auth": "Masuk",
+    "signup": "Bergabung"
+  },
+  "hero": {
+    "title": "Terhubung dengan Influencer, Kembangkan Brand Anda",
+    "subtitle": "NanoEdge mempertemukan UKM dan influencer untuk kolaborasi autentik yang menghasilkan hasil nyata",
+    "browse": "Jelajahi Influencer",
+    "join": "Daftar sebagai Influencer"
+  },
+  "howItWorks": {
+    "title": "Cara Kerjanya",
+    "step1": "Jelajahi",
+    "step1_desc": "Eksplorasi marketplace influencer kami yang dikurasi",
+    "step2": "Terhubung",
+    "step2_desc": "Temukan kecocokan sempurna untuk kampanye Anda",
+    "step3": "Berkolaborasi",
+    "step3_desc": "Bekerja sama membuat konten yang autentik",
+    "step4": "Ukur",
+    "step4_desc": "Pantau hasil dan ROI"
+  },
+  "featured": {
+    "title": "Influencer Unggulan",
+    "viewAll": "Lihat Semua Influencer"
+  },
+  "whyChoose": {
+    "title": "Mengapa Memilih NanoEdge?",
+    "verified": "Influencer Terverifikasi",
+    "verified_desc": "Semua influencer telah diverifikasi dan autentik",
+    "transparent": "Harga Transparan",
+    "transparent_desc": "Tidak ada biaya tersembunyi, harga adil untuk semua",
+    "seamless": "Pemesanan Mulus",
+    "seamless_desc": "Platform mudah digunakan untuk kolaborasi tanpa hambatan"
+  },
+  "cta": {
+    "title": "Siap Memulai?",
+    "subtitle": "Bergabunglah dengan ribuan brand dan influencer yang menggunakan NanoEdge untuk menciptakan kemitraan autentik",
+    "button": "Mulai Hari Ini"
+  },
+  "influencers": {
+    "title": "Jelajahi Influencer",
+    "search": "Cari influencer...",
+    "filter": "Filter",
+    "niche": "Niche",
+    "followers": "Pengikut",
+    "engagement": "Tingkat Engagement",
+    "price": "Harga",
+    "clear": "Hapus Filter",
+    "book": "Pesan Sekarang",
+    "noResults": "Tidak ada influencer yang ditemukan"
+  },
+  "auth": {
+    "login": "Masuk",
+    "signup": "Buat Akun",
+    "email": "Email",
+    "password": "Kata Sandi",
+    "confirmPassword": "Konfirmasi Kata Sandi",
+    "name": "Nama Lengkap",
+    "forgotPassword": "Lupa Kata Sandi?",
+    "noAccount": "Belum memiliki akun?",
+    "haveAccount": "Sudah memiliki akun?",
+    "submit": "Kirim"
+  },
+  "footer": {
+    "company": "Perusahaan",
+    "about": "Tentang Kami",
+    "blog": "Blog",
+    "careers": "Karir",
+    "resources": "Sumber Daya",
+    "help": "Pusat Bantuan",
+    "community": "Komunitas",
+    "legal": "Legal",
+    "terms": "Syarat & Ketentuan",
+    "privacy": "Kebijakan Privasi",
+    "copyright": "© 2026 NanoEdge. Hak cipta dilindungi."
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Kesalahan",
+    "success": "Berhasil",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "back": "Kembali"
+  }
+}
