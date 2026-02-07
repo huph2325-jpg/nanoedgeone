@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import Button from '../shared/Button'
-import InfluencerCard from '../shared/InfluencerCard'
+import Button from '../components/shared/Button'
+import InfluencerCard from '../components/shared/InfluencerCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
