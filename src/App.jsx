@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css'
 // Layout
 import Header from './components/shared/Header'
 import Footer from './components/shared/Footer'
-import LanguageSwitcher from './components/shared/LanguageSwitcher'
 
 // Pages
 import Home from './pages/Home'
@@ -32,7 +31,6 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
-        <LanguageSwitcher />
       </div>
     </Router>
   )
