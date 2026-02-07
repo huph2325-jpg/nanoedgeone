@@ -3,3 +3,10 @@ README.md
 .env.local
 node_modules/
 dist/
+
+# Tencent Cloud EdgeOne
+.env
+.edgeone/*
+!.edgeone/project.json
+.tef_dist/*
+  
