@@ -87,5 +87,29 @@
     "delete": "Delete",
     "edit": "Edit",
     "back": "Back"
+  },
+  "ai": {
+    "title": "AI Assistant",
+    "subtitle": "Smart influencer recommendations powered by AI",
+    "getRecommendations": "Get AI Recommendations",
+    "analyzing": "Analyzing...",
+    "chooseMode": "Choose Mode",
+    "guidedSearch": "Guided Search",
+    "aiQuery": "AI Query",
+    "describeNeed": "Describe what you need",
+    "placeholderQuery": "e.g., 'Find me fashion influencers with high engagement under 500 budget'",
+    "campaignType": "Campaign Type",
+    "budgetRange": "Budget Range",
+    "engagementLevel": "Engagement Level",
+    "preferredNiches": "Preferred Niches",
+    "topRecommendations": "Top Recommendations",
+    "perfectMatches": "perfect matches",
+    "found": "Found",
+    "newSearch": "New Search",
+    "viewDetails": "View Details",
+    "close": "Close",
+    "match": "Match",
+    "expectedROI": "Expected ROI",
+    "summary": "Analyzing influencers with AI..."
   }
 }

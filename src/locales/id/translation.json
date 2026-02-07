@@ -87,5 +87,29 @@
     "delete": "Hapus",
     "edit": "Edit",
     "back": "Kembali"
+  },
+  "ai": {
+    "title": "Asisten AI",
+    "subtitle": "Rekomendasi influencer pintar yang didukung AI",
+    "getRecommendations": "Dapatkan Rekomendasi AI",
+    "analyzing": "Menganalisis...",
+    "chooseMode": "Pilih Mode",
+    "guidedSearch": "Pencarian Terpandu",
+    "aiQuery": "Query AI",
+    "describeNeed": "Jelaskan apa yang Anda butuhkan",
+    "placeholderQuery": "misalnya 'Cari influencer fashion dengan engagement tinggi di bawah budget 500'",
+    "campaignType": "Tipe Kampanye",
+    "budgetRange": "Jangkauan Anggaran",
+    "engagementLevel": "Level Engagement",
+    "preferredNiches": "Niche Pilihan",
+    "topRecommendations": "Rekomendasi Teratas",
+    "perfectMatches": "kecocokan sempurna",
+    "found": "Ditemukan",
+    "newSearch": "Pencarian Baru",
+    "viewDetails": "Lihat Detail",
+    "close": "Tutup",
+    "match": "Kecocokan",
+    "expectedROI": "ROI yang Diharapkan",
+    "summary": "Menganalisis influencer dengan AI..."
   }
 }

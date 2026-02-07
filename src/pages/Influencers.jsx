@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import InfluencerCard from '../components/shared/InfluencerCard'
 import Button from '../components/shared/Button'
+import AIRecommendationPanel from '../components/shared/AIRecommendationPanel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faSliders, faTimes, faFilter } from '@fortawesome/free-solid-svg-icons'
 
@@ -311,6 +312,16 @@ export default function Influencers() {
           </div>
         )}
       </div>
+
+      {/* AI Recommendation Panel */}
+      <AIRecommendationPanel
+        availableInfluencers={allInfluencers}
+        onSelectInfluencer={(influencer) => {
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+          // Filter to show only selected influencer
+          setSearchTerm(influencer.name)
+        }}
+      />
     </div>
   )
 }
